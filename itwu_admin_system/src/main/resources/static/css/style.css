@@ -275,3 +275,12 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+
+
+
+/*** text-box ***/
+
+.mb-3_1 {
+    margin-right: 0.5rem !important;
+}
