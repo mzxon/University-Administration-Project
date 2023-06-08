@@ -25,5 +25,10 @@ public class SugangCont {
 	public String timetable() {
 		return "/sugang/timetable";
 	}//timetable() end
+	
+	@RequestMapping("/cart")
+	public String cart() {
+		return "/sugang/cart";
+	}//cart() end
 
 }//class end

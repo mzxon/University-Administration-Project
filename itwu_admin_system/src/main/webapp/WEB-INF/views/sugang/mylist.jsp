@@ -2,22 +2,12 @@
     pageEncoding="UTF-8"%>    
 <%@ include file="../header.jsp" %>
 
-<!-- Recent Sales Start -->
+<!-- Contents Start -->
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-12">
             <div class="bg-light rounded h-100 p-4">
                 <h2 class="mb-4">수강신청 내역</h2>
-                <div class="d-flex mb-2">
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 15%">
-	                    <option selected>선택</option>
-	                    <option value="1">분류</option>
-	                    <option value="2">제목</option>
-	                    <option value="3">작성자</option>
-	                </select>
-                    <input class="form-control bg-transparent" style="width: 30%" type="text" placeholder="검색어">
-                    <button type="button" class="btn btn-primary ms-2">검색</button>
-                </div>
                 <div class="table-responsive" style="margin-top: 1rem !important;">
                      <table class="table text-start align-middle table-bordered table-hover mb-0">
                          <thead>
@@ -111,6 +101,6 @@
         </div>
     </div>
 </div>
-<!-- Recent Sales End -->
+<!-- Contents End -->
 
 <%@ include file="../footer.jsp" %>

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>    
 <%@ include file="../header.jsp" %>
 
-<!-- Form Start -->
+<!-- Contents Start -->
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-sm-12">
@@ -51,6 +51,6 @@
         </div>
     </div>
 </div>
-<!-- Form End -->
+<!-- Contents End -->
 
 <%@ include file="../footer.jsp" %>

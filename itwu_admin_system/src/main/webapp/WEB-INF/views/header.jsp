@@ -53,7 +53,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="/" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>ITWU</h3>
+                    <h3 class="text-primary"><i class="fa fa-university me-2"></i>ITWU</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="ms-3">
@@ -67,18 +67,40 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>수강신청</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/sugang/list" class="dropdown-item">수강신청</a>
+                            <a href="/sugang/cart" class="dropdown-item">수강 장바구니</a>
                             <a href="/sugang/mylist" class="dropdown-item">수강신청 내역</a>
                             <a href="/sugang/timetable" class="dropdown-item">시간표 조회</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>학적정보</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i>학적정보</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/hakjuk/modify" class="dropdown-item">나의 학적정보</a>
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 수정</a>
                             <a href="" class="dropdown-item">등록금고지서 조회</a>
                         </div>
                     </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-chalkboard-teacher me-2"></i>강의관리</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="" class="dropdown-item">강의등록</a>
+                            <a href="" class="dropdown-item">강의관리</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-pen me-2"></i>성적관리</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="" class="dropdown-item">성적등록</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-school me-2"></i>학적관리</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="" class="dropdown-item">학생관리</a>
+                            <a href="" class="dropdown-item">등록금고지서 관리</a>
+                        </div>
+                    </div>
+                    <a href="" class="nav-item nav-link"><i class="fa fa-user me-2"></i>마이페이지</a>
                 </div>
             </nav>
         </div>
@@ -128,7 +150,7 @@
                             <span class="d-none d-lg-inline-flex">관리자1</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">비밀번호 변경</a>
+                            <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 변경</a>
                             <a href="#" class="dropdown-item">로그아웃</a>
                             <a href="/sign/signin" class="dropdown-item">로그인</a>
                             <a href="/sign/signup" class="dropdown-item">회원가입</a>

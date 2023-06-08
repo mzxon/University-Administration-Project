@@ -120,6 +120,12 @@
     }
 }
 
+@media (min-width: 576px){
+	.col-sm-2_1 {
+	    flex: 0 0 auto;
+	    width: 6%;
+	}
+}
 
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
@@ -282,5 +288,5 @@
 /*** text-box ***/
 
 .mb-3_1 {
-    margin-right: 0.5rem !important;
+    margin-right: 1.5rem !important;
 }
