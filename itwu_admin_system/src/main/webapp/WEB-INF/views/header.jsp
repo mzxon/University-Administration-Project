@@ -62,20 +62,20 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="/notice/list" class="nav-item nav-link"><i class="far fa-file-alt me-2"></i>공지사항</a>
+                    <a href="/notice/noticelist" class="nav-item nav-link"><i class="far fa-file-alt me-2"></i>공지사항</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>수강신청</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/sugang/list" class="dropdown-item">수강신청</a>
-                            <a href="/sugang/cart" class="dropdown-item">수강 장바구니</a>
-                            <a href="/sugang/mylist" class="dropdown-item">수강신청 내역</a>
-                            <a href="/sugang/timetable" class="dropdown-item">시간표 조회</a>
+                            <a href="/sugang/suganglist" class="dropdown-item">수강신청</a>
+                            <a href="/sugang/sugangcart" class="dropdown-item">수강 장바구니</a>
+                            <a href="/sugang/sugangmylist" class="dropdown-item">수강신청 내역</a>
+                            <a href="/sugang/sugangtimetable" class="dropdown-item">시간표 조회</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i>학적정보</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/hakjuk/modify" class="dropdown-item">나의 학적정보</a>
+                            <a href="/hakjuk/hakjukmodify" class="dropdown-item">나의 학적정보</a>
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 수정</a>
                             <a href="" class="dropdown-item">등록금고지서 조회</a>
                         </div>
@@ -83,8 +83,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-chalkboard-teacher me-2"></i>강의관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="" class="dropdown-item">강의등록</a>
-                            <a href="" class="dropdown-item">강의관리</a>
+                            <a href="/subject/subjectwrite" class="dropdown-item">강의등록</a>
+                            <a href="/subject/subjectlist" class="dropdown-item">강의관리</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -112,39 +112,12 @@
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
                 <a href="/" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                    <h2 class="text-primary mb-0"><i class="fa fa-university"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">알림</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
-                        </div>
-                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <span class="d-none d-lg-inline-flex">관리자1</span>

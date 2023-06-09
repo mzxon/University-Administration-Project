@@ -11,24 +11,24 @@ public class SugangCont {
 		System.out.println("---------SugangController() 객체 생성");
 	}
 	
-	@RequestMapping("/list")
+	@RequestMapping("/suganglist")
 	public String suganglist() {
-		return "/sugang/list";
+		return "/sugang/suganglist";
 	}//suganglist() end
 	
-	@RequestMapping("/mylist")
+	@RequestMapping("/sugangmylist")
 	public String sugangmylist() {
-		return "/sugang/mylist";
+		return "/sugang/sugangmylist";
 	}//sugangmylist() end
 	
-	@RequestMapping("/timetable")
+	@RequestMapping("/sugangtimetable")
 	public String timetable() {
-		return "/sugang/timetable";
+		return "/sugang/sugangtimetable";
 	}//timetable() end
 	
-	@RequestMapping("/cart")
+	@RequestMapping("/sugangcart")
 	public String cart() {
-		return "/sugang/cart";
+		return "/sugang/sugangcart";
 	}//cart() end
 
 }//class end

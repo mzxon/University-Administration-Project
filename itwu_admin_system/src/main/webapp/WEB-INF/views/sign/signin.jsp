@@ -55,8 +55,8 @@
                 <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                     <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                            <a href="index.jsp" class="">
-                                <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>ITWU</h3>
+                            <a href="/" class="">
+                                <h3 class="text-primary"><i class="fa fa-university me-2"></i>ITWU</h3>
                             </a>
                             <h3>로그인</h3>
                         </div>

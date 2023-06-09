@@ -11,14 +11,14 @@ public class NoticeCont {
 		System.out.println("---------NoticeController() 객체 생성");
 	}
 	
-	@RequestMapping("/list")
+	@RequestMapping("/noticelist")
 	public String noticelist() {
-		return "/notice/list";
+		return "/notice/noticelist";
 	}//noticelist() end
 	
-	@RequestMapping("/write")
+	@RequestMapping("/noticewrite")
 	public String noticewrite() {
-		return "/notice/write";
+		return "/notice/noticewrite";
 	}//noticewrite() end
 
 }//class end

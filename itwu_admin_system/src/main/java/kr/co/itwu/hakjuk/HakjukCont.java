@@ -11,9 +11,9 @@ public class HakjukCont {
 		System.out.println("---------HakjukController() 객체 생성");
 	}
 	
-	@RequestMapping("/modify")
+	@RequestMapping("/hakjukmodify")
 	public String modify() {
-		return "/hakjuk/modify";
+		return "/hakjuk/hakjukmodify";
 	}//modify() end
 	
 	@RequestMapping("/pw_modify")
