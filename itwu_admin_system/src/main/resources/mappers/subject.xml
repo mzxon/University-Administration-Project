@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<!-- subject.xml -->
+     
+<mapper namespace="subject">
+
+	<!-- 강의목록 -->
+	<select id="list" resultType="java.util.Map">
+		SELECT subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file
+		FROM subject
+		ORDER BY hgcode
+	</select>
+	
+	<!-- 강의등록 -->
+	<insert id="insert" parameterType="java.util.Map">
+		INSERT INTO subject(subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file)
+		VALUES(#{subcode}, #{code}, #{hgcode}, #{subname}, #{subcnt}, #{place}, #{sub}, #{subgrade}, #{hakgi}, #{day}, #{classdatecnt}, #{time}, #{sub_file})
+	</insert>
+</mapper>
+     

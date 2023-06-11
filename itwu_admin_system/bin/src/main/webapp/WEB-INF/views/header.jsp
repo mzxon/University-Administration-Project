@@ -83,8 +83,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-chalkboard-teacher me-2"></i>강의관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/subject/write" class="dropdown-item">강의등록</a>
-                            <a href="/subject/list" class="dropdown-item">강의관리</a>
+                            <a href="/subject/subjectwrite" class="dropdown-item">강의등록</a>
+                            <a href="/subject/subjectlist" class="dropdown-item">강의관리</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
