@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="/notice/noticelist" class="nav-item nav-link" style="font-weight: 900;"><i class="far fa-file-alt me-2"></i>공지사항</a>
+                    <a href="/notice/list" class="nav-item nav-link" style="font-weight: 900;"><i class="far fa-file-alt me-2"></i>공지사항</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-table me-2"></i>수강신청</a>
                         <div class="dropdown-menu bg-transparent border-0">

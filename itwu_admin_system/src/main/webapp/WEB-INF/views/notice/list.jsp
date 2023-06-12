@@ -23,41 +23,23 @@
                         <thead>
                             <tr>
                                 <th scope="col">No</th>
-                                <th scope="col">분류</th>
                                 <th scope="col">제목</th>
-                                <th scope="col">작성자</th>
-                                <th scope="col">작성일</th>
                                 <th scope="col">조회수</th>
+                                <th scope="col">작성일</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">3</th>
-                                <th scope="row">행정</th>
-                                <td>통학버스 변경사항</td>
-                                <td>관리자</td>
-                                <td>2023-06-08</td>
-                                <td>500</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <th scope="row">학사</th>
-                                <td>기말고사 과제</td>
-                                <td>나교수</td>
-                                <td>2023-06-08</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <th scope="row">학사</th>
-                                <td>컴퓨터공학과 쫑파티</td>
-                                <td>컴공과대</td>
-                                <td>2023-06-08</td>
-                                <td>200</td>
+                            <c:forEach items="${list}" var="row" varStatus="vs">
+                                 <td>${row.no}</td>
+                                 <td><a href="detail/${row.no}">${row.title}</a></td>
+                                 <td>${row.views}</td>
+                                 <td>${row.sysdate}</td>
+						 	</c:forEach>
                             </tr>
                         </tbody>
                     </table>
-                	<button type="button" class="btn btn-primary ms-2" style="float: right" onclick="location.href='/notice/write'">글쓰기</button>
+                	<button type="button" class="btn btn-primary ms-2" style="float: right" onclick="location.href='notice/write'">글쓰기</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<!-- notice.xml -->
+
+<mapper namespace="notice">
+
+	<select id="list" resultType="java.util.Map">
+		SELECT no, title, views, sysdate
+		FROM notice
+		ORDER BY no
+	</select>
+	
+	<insert id="insert" parameterType="java.util.Map">
+		INSERT INTO notice(code, title, content, views)
+		VALUES(#{code}, #{title}, #{content}, #{views})
+	</insert>
+	
+	<select id="detail" parameterType="int" resultType="java.util.Map">
+		SELECT no, title, views, sysdate
+		FROM notice
+		WHERE no=#{no}
+	</select>
+
+</mapper>
