@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<!-- mem.xml -->
+
+<mapper namespace="member">
+
+	<!-- 학생목록 -->
+	<select id="studentlist" resultType="java.util.Map">
+		SELECT code, name, hgcode, grade, academic_status
+		FROM student
+		ORDER BY hgcode
+	</select>
+	
+	<!-- 학생추가 -->
+	<insert id="studentIns" parameterType="java.util.Map">
+		INSERT INTO student(code, name, passwd, phone, email, grade, academic_status, admission_date, hgcode)
+		VALUES (#{code}, #{name}, #{passwd}, #{phone}, #{email}, #{grade}, #{academic_status}, #{admission_date}, #{hgcode})
+	</insert>
+	
+	<!-- 교수목록 -->
+	<select id="prolist" resultType="java.util.Map">
+		SELECT code, name, hgcode, phone, email
+		FROM professor
+	</select>
+	
+	<!-- 교수추가 -->
+	<insert id="proIns" parameterType="java.util.Map">
+		INSERT INTO professor(code, name, passwd, phone, email, hgcode)
+		VALUES (#{code}, #{name}, #{passwd}, #{phone}, #{email}, #{hgcode})
+	</insert>
+
+
+</mapper>
+     
