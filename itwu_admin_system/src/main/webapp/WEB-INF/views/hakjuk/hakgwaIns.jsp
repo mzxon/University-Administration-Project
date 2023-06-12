@@ -13,20 +13,20 @@
 	                    <label for="example" class="col-sm-2_2 col-form-label" style="width: 12% ">단과대학</label>
 		                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%">
 		                    <option selected>선택</option>
-		                    <option value="0">인문대학</option>
-		                    <option value="0">사회과학대학</option>
-		                    <option value="0">자연과학대학</option>
-		                    <option value="0">간호대학</option>
-		                    <option value="0">경영대학</option>
-		                    <option value="0">공과대학</option>
-		                    <option value="0">농업생명과학대학</option>
-		                    <option value="0">미술대학</option>
-		                    <option value="0">사범대학</option>
-		                    <option value="0">생활과학대학</option>
-		                    <option value="0">수의과대학</option>
-		                    <option value="0">약학대학</option>
-		                    <option value="0">음악대학</option>
-		                    <option value="0">의과대학</option>
+		                    <option value="D01">인문대학</option>
+		                    <option value="D02">사회과학대학</option>
+		                    <option value="D03">자연과학대학</option>
+		                    <option value="D04">간호대학</option>
+		                    <option value="D05">경영대학</option>
+		                    <option value="D06">공과대학</option>
+		                    <option value="D07">농업생명과학대학</option>
+		                    <option value="D08">미술대학</option>
+		                    <option value="D09">사범대학</option>
+		                    <option value="D10">생활과학대학</option>
+		                    <option value="D11">수의과대학</option>
+		                    <option value="D12">약학대학</option>
+		                    <option value="D13">음악대학</option>
+		                    <option value="D14">의과대학</option>
 		                </select>
 	                </div>
 	                <div class="d-flex mb-2">
