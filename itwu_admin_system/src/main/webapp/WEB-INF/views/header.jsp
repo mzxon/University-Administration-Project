@@ -62,18 +62,18 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="/notice/noticelist" class="nav-item nav-link"><i class="far fa-file-alt me-2"></i>공지사항</a>
+                    <a href="/notice/noticelist" class="nav-item nav-link" style="font-weight: 900;"><i class="far fa-file-alt me-2"></i>공지사항</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i>수강신청</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-table me-2"></i>수강신청</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/sugang/suganglist" class="dropdown-item">수강신청</a>
-                            <a href="/sugang/sugangcart" class="dropdown-item">수강 장바구니</a>
+                            <a href="/sugang/sugangcart" class="dropdown-item">수강신청 장바구니</a>
                             <a href="/sugang/sugangmylist" class="dropdown-item">수강신청 내역</a>
                             <a href="/sugang/sugangtimetable" class="dropdown-item">시간표 조회</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i>학적정보</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-user me-2"></i>학적정보</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/hakjuk/hakjukmodify" class="dropdown-item">나의 학적정보</a>
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 수정</a>
@@ -81,26 +81,29 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-chalkboard-teacher me-2"></i>강의관리</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-chalkboard-teacher me-2"></i>강의관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/subject/write" class="dropdown-item">강의등록</a>
                             <a href="/subject/list" class="dropdown-item">강의관리</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-pen me-2"></i>성적관리</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-pen me-2"></i>성적관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="" class="dropdown-item">성적등록</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-school me-2"></i>학적관리</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-school me-2"></i>학적관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="" class="dropdown-item">학생관리</a>
-                            <a href="" class="dropdown-item">등록금고지서 관리</a>
+                            <a href="/hakjuk/hakgwaIns" class="dropdown-item">학과 등록</a>
+                            <a href="/hakjuk/hakgwalist" class="dropdown-item">학과 목록</a>
+                            <a href="/hakjuk/hakjukIns" class="dropdown-item">회원 등록</a>
+                            <a href="/hakjuk/tuitionIns" class="dropdown-item">등록금 등록</a>
+                            <a href="" class="dropdown-item">등록금 목록</a>
                         </div>
                     </div>
-                    <a href="" class="nav-item nav-link"><i class="fa fa-user me-2"></i>마이페이지</a>
+                    <a href="" class="nav-item nav-link" style="font-weight: 900;"><i class="fa fa-user me-2"></i>마이페이지</a>
                 </div>
             </nav>
         </div>
