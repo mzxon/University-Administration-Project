@@ -6,11 +6,6 @@
 
 <mapper namespace="hakjuk">
 
-	<!-- 학과 목록 -->
-	<select id="hakgwalist" resultType="java.util.Map">
-		SELECT hgcode, dcode, dname, hcode, hname, hgname
-		FROM hakgwa
-		ORDER BY hgcode
-	</select>
+
 
 </mapper>

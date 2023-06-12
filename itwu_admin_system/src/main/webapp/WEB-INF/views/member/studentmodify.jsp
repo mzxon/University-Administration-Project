@@ -34,16 +34,12 @@
                         <input type="text" class="form-control" id="example" value="4" readonly>
                     </div>
                     <div class="mb-3">
-                        <label for="example" class="form-label">학력상태</label>
+                        <label for="example" class="form-label">학적상태</label>
                         <input type="text" class="form-control" id="example" value="재학중" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="example" class="form-label">입학날짜</label>
                         <input type="text" class="form-control" id="example" value="2023-03-02" readonly>
-                    </div>
-                    <div class="mb-3">
-                        <label for="example" class="form-label">생년월일</label>
-                        <input type="text" class="form-control" id="example" value="2002-05-28" readonly>
                     </div>
                     <button type="submit" class="btn btn-primary">개인정보 수정</button>
                 </form>

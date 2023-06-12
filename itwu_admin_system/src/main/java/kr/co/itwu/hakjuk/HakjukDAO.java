@@ -19,9 +19,6 @@ public class HakjukDAO {
 	SqlSession sqlSession;
 	
 	
-	public List<Map<String, Object>> hakgwalist(){
-		return sqlSession.selectList("hakjuk.hakgwalist");
-	}//hakgwalist() end
 	
 	
 	
