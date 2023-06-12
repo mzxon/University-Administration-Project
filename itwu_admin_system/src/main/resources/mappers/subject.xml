@@ -18,5 +18,32 @@
 		INSERT INTO subject(subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file)
 		VALUES(#{subcode}, #{code}, #{hgcode}, #{subname}, #{subcnt}, #{place}, #{sub}, #{subgrade}, #{hakgi}, #{day}, #{classdatecnt}, #{time}, #{sub_file})
 	</insert>
+	
+	<!-- 파일명가져오기 -->
+	<select id="filename" parameterType="String" resultType="String">
+		SELECT sub_file
+		FROM subject
+		WHERE subcode=#{sub_code}
+	</select>
+	
+	<!-- 강의삭제 -->
+	<delete id="delete" parameterType="String">
+		DELETE FROM subject
+		WHERE subcode=#{subcode}
+	</delete>
+	
+	<!-- 강의상세보기 -->
+	<select id="detail" parameterType="String" resultType="java.util.Map">
+		SELECT subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file
+		FROM subject
+		WHERE subcode=#{subcode}
+	</select>
+	
+	<!-- 강의수정 -->
+	<delete id="update">
+		UPDATE subject
+		SET subcode=#{subcode}, code=#{code}, hgcode=#{hgcode}, subname=#{subname}, subcnt=#{subcnt}, place=#{place}, sub=#{sub}, subgrade=#{subgrade}, hakgi=#{hakgi}, day=#{day}, classdatecnt=#{classdatecnt}, time=#{time}, sub_file=#{sub_file}
+		WHERE subcode=#{subcode}
+	</delete>
 </mapper>
      

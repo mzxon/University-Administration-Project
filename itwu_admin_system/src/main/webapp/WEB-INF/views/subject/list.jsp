@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>    
 <%@ include file="../header.jsp" %>
 
+
 <!-- Contents Start -->
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
@@ -51,6 +52,7 @@
 	                </select>
                     <button type="button" class="btn btn-primary ms-2">검색</button>
                 </div>
+                <br>
                 
 <!------------------------------------------------------------------------------------------------------>                
                 <div class="table-responsive" style="margin-top: 1rem !important;">
@@ -70,7 +72,6 @@
                          <tbody>
                          <tr>
                          <c:forEach items="${list}" var="row" varStatus="vs">
-                                 subject(subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file)
                                  <td>${row.subcode}</td>
                                  <td><!-- 교수명 --></td>
                                  <td><!-- 학과명 --></td>
@@ -81,8 +82,8 @@
                                  <td>${row.time}</td>
                                  <td><button>강의 계획서</button></td>
                                  <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
+                 					<a class="btn btn-sm btn-success" href="detail/${row.subcode}">수정</a>
+                 					<a class="btn btn-sm btn-danger" href="delete/${row.subcode}">삭제</a>
 								 </td>
 						 </c:forEach>
 						 </tr>
