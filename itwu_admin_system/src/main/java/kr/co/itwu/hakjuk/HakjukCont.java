@@ -12,14 +12,35 @@ public class HakjukCont {
 	}
 	
 	@RequestMapping("/hakjukmodify")
-	public String modify() {
+	public String hakjukmodify() {
 		return "/hakjuk/hakjukmodify";
-	}//modify() end
+	}//hakjukmodify() end
 	
 	@RequestMapping("/pw_modify")
 	public String pwmodify() {
 		return "/hakjuk/pw_modify";
 	}//pwmodify() end
+	
+	@RequestMapping("/hakjukIns")
+	public String hakjukIns() {
+		return "/hakjuk/hakjukIns";
+	}//hakjukIns()
+	
+	@RequestMapping("/hakgwalist")
+	public String hakgwalist() {
+		return "/hakjuk/hakgwalist";
+	}//hakgwalist() end
+	
+	@RequestMapping("/hakgwaIns")
+	public String hakgwaIns() {
+		return "/hakjuk/hakgwaIns";
+	}//hakgwaIns()end
+	
+	@RequestMapping("/tuitionIns")
+	public String tuitionIns() {
+		return "/hakjuk/tuitionIns";
+	}//tuitionIns() end
+	
 	
 	
 }//class end
