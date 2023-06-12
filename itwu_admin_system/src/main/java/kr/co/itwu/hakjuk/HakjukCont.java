@@ -19,11 +19,6 @@ public class HakjukCont {
 	@Autowired
 	HakjukDAO hakjukDAO;
 	
-	@RequestMapping("/hakjukmodify")
-	public String hakjukmodify() {
-		return "/hakjuk/hakjukmodify";
-	}//hakjukmodify() end
-	
 	@RequestMapping("/pw_modify")
 	public String pwmodify() {
 		return "/hakjuk/pw_modify";
@@ -34,20 +29,6 @@ public class HakjukCont {
 		return "/hakjuk/hakjukIns";
 	}//hakjukIns()
 	
-	@RequestMapping("/hakgwalist")
-	public ModelAndView hakgwalist() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("hakjuk/hakgwalist");
-		mav.addObject("hakgwalist", hakjukDAO.hakgwalist());
-		return mav;
-	}//hakgwalist() end
-	
-	@RequestMapping("/hakgwaIns")
-	public void hakgwaIns(@RequestParam Map<String, Object> map) {
-
-		System.out.println(map);
-	
-	}//hakgwaIns()end
 	
 	@RequestMapping("/tuitionIns")
 	public String tuitionIns() {

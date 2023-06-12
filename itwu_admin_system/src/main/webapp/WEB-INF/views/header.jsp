@@ -75,7 +75,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-user me-2"></i>학적정보</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/hakjuk/hakjukmodify" class="dropdown-item">나의 학적정보</a>
+                            <a href="/member/studentmodify" class="dropdown-item">나의 학적정보</a>
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 수정</a>
                             <a href="" class="dropdown-item">등록금고지서 조회</a>
                         </div>
@@ -96,9 +96,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-school me-2"></i>학적관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/hakjuk/hakgwaIns" class="dropdown-item">학과 등록</a>
-                            <a href="/hakjuk/hakgwalist" class="dropdown-item">학과 목록</a>
-                            <a href="/hakjuk/hakjukIns" class="dropdown-item">회원 등록</a>
+                            <a href="/hakgwa/hakgwalist" class="dropdown-item">학과 관리</a>
+                            <a href="/member/studentlist" class="dropdown-item">학생 관리</a>
+                            <a href="/member/prolist" class="dropdown-item">교수 관리</a>
                             <a href="/hakjuk/tuitionIns" class="dropdown-item">등록금 등록</a>
                             <a href="" class="dropdown-item">등록금 목록</a>
                         </div>

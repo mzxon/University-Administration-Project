@@ -13,20 +13,12 @@
                     <label for="example" class="col-sm-2_2 col-form-label">단과대학</label>
 	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%">
 	                    <option selected>선택</option>
-	                    <option value="D01">인문대학</option>
-	                    <option value="D02">사회과학대학</option>
-	                    <option value="D03">자연과학대학</option>
-	                    <option value="D04">간호대학</option>
-	                    <option value="D05">경영대학</option>
-	                    <option value="D06">공과대학</option>
-	                    <option value="D07">농업생명과학대학</option>
-	                    <option value="D08">미술대학</option>
-	                    <option value="D09">사범대학</option>
-	                    <option value="D10">생활과학대학</option>
-	                    <option value="D11">수의과대학</option>
-	                    <option value="D12">약학대학</option>
-	                    <option value="D13">음악대학</option>
-	                    <option value="D14">의과대학</option>
+						<option value="인문대학">인문대학(D01)</option>
+						<option value="사회과학대학">사회과학대학(D02)</option>
+						<option value="자연과학대학">자연과학대학(D03)</option>
+						<option value="공과대학">공과대학(D04)</option>
+						<option value="미술대학">미술대학(D05)</option>
+						<option value="사범대학">사범대학(D06)</option>
 	                </select>
                     <label for="example" class="col-sm-2_1 col-form-label">학부</label>
 	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%">
@@ -69,7 +61,7 @@
                      </table>
                  </div>
                  <div style="margin-top: 1rem !important;">
-                 	<a class="btn btn-sm btn-success" href="">학과 등록</a>
+                 	<a class="btn btn-sm btn-success" href="hakgwawrite">학과 등록</a>
                  	<a class="btn btn-sm btn-danger" href="">학과 삭제</a>
                  </div>
             </div>
