@@ -51,86 +51,41 @@
 	                </select>
                     <button type="button" class="btn btn-primary ms-2">검색</button>
                 </div>
+                
+<!------------------------------------------------------------------------------------------------------>                
                 <div class="table-responsive" style="margin-top: 1rem !important;">
                      <table class="table text-start align-middle table-bordered table-hover mb-0">
                          <thead>
                              <tr class="text-dark">
                                  <th scope="col">강의번호</th>
-                                 <th scope="col">년도/학기</th>
+                                 <th scope="col">교수</th>
+                                 <th scope="col">학과</th>
                                  <th scope="col">학년</th>
-                                 <th scope="col">구분</th>
                                  <th scope="col">강의이름</th>
-                                 <th scope="col"></th>
+                                 <th scope="col">강의실</th>
+                                 <th scope="col">요일</th>
+                                 <th scope="col">시간</th>
                              </tr>
                          </thead>
                          <tbody>
-                             <tr>
-                                 <td>G000001</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>컴퓨터의 개념 및 실습</td>
+                         <tr>
+                         <c:forEach items="${list}" var="row" varStatus="vs">
+                                 subject(subcode, code, hgcode, subname, subcnt, place, sub, subgrade, hakgi, day, classdatecnt, time, sub_file)
+                                 <td>${row.subcode}</td>
+                                 <td><!-- 교수명 --></td>
+                                 <td><!-- 학과명 --></td>
+                                 <td>${row.subgrade}</td>
+                                 <td>${row.subname}</td>
+                                 <td>${row.place}</td>
+                                 <td>${row.day}</td>
+                                 <td>${row.time}</td>
+                                 <td><button>강의 계획서</button></td>
                                  <td>
                  					<a class="btn btn-sm btn-success" href="">수정</a>
                  					<a class="btn btn-sm btn-danger" href="">삭제</a>
 								 </td>
-                             </tr>
-                             <tr>
-                                 <td>G000002</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>이산수학</td>
-                                 <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
-								 </td>
-                             </tr>
-                             <tr>
-                                 <td>G000003</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>프로그래밍연습</td>
-                                 <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
-								 </td>
-                             </tr>
-                             <tr>
-                                 <td>G000004</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>2학년</td>
-                                 <td></td>
-                                 <td>자료구조</td>
-                                 <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
-								 </td>
-                             </tr>
-                             <tr>
-                                 <td>G000005</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>2학년</td>
-                                 <td></td>
-                                 <td>논리설계</td>
-                                 <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
-								 </td>
-                             </tr>
-                             <tr>
-                                 <td>G000006</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>3학년</td>
-                                 <td></td>
-                                 <td>프로그래밍의 원리</td>
-                                 <td>
-                 					<a class="btn btn-sm btn-success" href="">수정</a>
-                 					<a class="btn btn-sm btn-danger" href="">삭제</a>
-								 </td>
-                             </tr>
-
+						 </c:forEach>
+						 </tr>
                          </tbody>
                      </table>
                  </div>
