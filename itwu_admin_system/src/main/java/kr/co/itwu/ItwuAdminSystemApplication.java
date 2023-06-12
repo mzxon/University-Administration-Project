@@ -35,7 +35,7 @@ public class ItwuAdminSystemApplication {
 	}//sqlSession() end
 	
 	
-	//콱씨 올라가라
+	//콱씨 올라가라ererer
 	
 	
 	
