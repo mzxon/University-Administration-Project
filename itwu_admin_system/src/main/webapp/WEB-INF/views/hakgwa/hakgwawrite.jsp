@@ -23,17 +23,6 @@
 		                </select>
                         <input type="text" class="form-control" style="width: 20%" id="dcode" name="dcode" placeholder="예) D01" required>
 	                </div>
-	                <div class="d-flex mb-2">
-	                    <label for="example" class="col-sm-2_2 col-form-label" style="width: 12% ">학부</label>
-		                <select name="hname" id="hname" class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%" required>
-		                    <option selected value="">선택</option>
-		                    <option value="문학부">문학부(HB001)</option>
-		                    <option value="사학부">사학부(HB002)</option>
-		                    <option value="컴퓨터공학부">컴퓨터공학부(HB001)</option>
-		                    <option value="기계공학부">기계공학부(HB002)</option>
-		                </select>
-                        <input type="text" class="form-control" style="width: 20%" id="hcode" name="hcode" placeholder="예) HB001" required>
-	                </div>
                     <div class="row mb-2">
                         <label for="example" class="col-sm-2_2 col-form-label">학과코드</label>
                         <div class="col-sm-10">

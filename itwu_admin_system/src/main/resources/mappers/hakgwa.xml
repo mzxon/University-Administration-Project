@@ -8,15 +8,15 @@
 
 	<!-- 학과 목록 -->
 	<select id="list" resultType="java.util.Map">
-		SELECT hgcode, dcode, dname, hcode, hname, hgname
+		SELECT hgcode, dcode, dname, hgname
 		FROM hakgwa
 		ORDER BY hgcode
 	</select>
 	
 	<!-- 학과 추가 -->
 	<insert id="insert" parameterType="java.util.Map">
-		INSERT INTO hakgwa(hgcode, dcode, dname, hcode, hname, hgname)
-		VALUES(#{hgcode}, #{dcode}, #{dname}, #{hcode}, #{hname}, #{hgname})	
+		INSERT INTO hakgwa(hgcode, dcode, dname, hgname)
+		VALUES(#{hgcode}, #{dcode}, #{dname}, #{hgname})	
 	</insert>
 
 </mapper>

@@ -100,7 +100,7 @@
                             <a href="/member/studentlist" class="dropdown-item">학생 관리</a>
                             <a href="/member/prolist" class="dropdown-item">교수 관리</a>
                             <a href="/hakjuk/tuitionIns" class="dropdown-item">등록금 등록</a>
-                            <a href="" class="dropdown-item">등록금 목록</a>
+                            <a href="/tuition/list" class="dropdown-item">등록금 목록</a>
                         </div>
                     </div>
                     <a href="" class="nav-item nav-link" style="font-weight: 900;"><i class="fa fa-user me-2"></i>마이페이지</a>
