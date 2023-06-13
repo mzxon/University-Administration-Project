@@ -9,6 +9,12 @@
             <div class="bg-light rounded h-100 p-4">
                 <h2 class="mb-4">등록금 등록</h2>
                 <form>
+                    <div class="row mb-2">
+                        <label for="example" class="col-sm-2_2 col-form-label">등록금 일련번호</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="tcode" name="tcode" placeholder="예) 2023-1">
+                        </div>
+                    </div>
 	                <div class="d-flex mb-2">
 	                    <label for="example" class="col-sm-2_2 col-form-label" style="width: 12% ">단과대학</label>
 		                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%">
@@ -27,15 +33,6 @@
 		                    <option value="0">약학대학</option>
 		                    <option value="0">음악대학</option>
 		                    <option value="0">의과대학</option>
-		                </select>
-	                </div>
-	                <div class="d-flex mb-2">
-	                    <label for="example" class="col-sm-2_2 col-form-label" style="width: 12% ">학부</label>
-		                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 30%">
-		                    <option selected>선택</option>
-		                    <option value="1">교수</option>
-		                    <option value="2">학생</option>
-		                    <option value="3">관리자</option>
 		                </select>
 	                </div>
 	                <div class="d-flex mb-2">
