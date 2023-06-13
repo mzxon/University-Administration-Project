@@ -10,46 +10,29 @@
             <div class="bg-light rounded h-100 p-4">
                 <h2 class="mb-4">강의내역</h2>
                 <div class="d-flex mb-2">
-                    <label for="example" class="col-sm-2_1 col-form-label">구분</label>
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 12%">
-	                    <option selected>전체</option>
-	                    <option value="1">전공</option>
-	                    <option value="2">교양</option>
-	                    <option value="3">기타</option>
-	                </select>
                     <label for="example" class="col-sm-2_1 col-form-label">종류</label>
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 12%">
+	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width:10%">
 	                    <option selected value="1">교과명</option>
 	                    <option value="2">강의번호</option>
 	                </select>
-                    <label for="example" class="col-sm-2_1 col-form-label">입력</label>
-                    <input class="form-control bg-transparent" style="width: 25%; margin-right: 1.5rem" type="text" placeholder="검색어">
-                    <button type="button" class="btn btn-primary ms-2">검색</button>
-                </div>
-                <div class="d-flex mb-2">
                     <label for="example" class="col-sm-2_1 col-form-label">학부</label>
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 12%">
+	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width:10%">
 	                    <option selected>선택</option>
 	                    <option value="1">컴퓨터공학과</option>
 	                    <option value="2">경제학과</option>
 	                    <option value="2">관광학과</option>
 	                    <option value="2">사회학과</option>
 	                </select>
-                    <label for="example" class="col-sm-2_1 col-form-label">구분</label>
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 12%">
-	                    <option selected>전체</option>
-	                    <option value="1">전공</option>
-	                    <option value="2">교양</option>
-	                    <option value="3">기타</option>
-	                </select>
                     <label for="example" class="col-sm-2_1 col-form-label">학년</label>
-	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 25%">
+	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width:15%">
 	                    <option selected value="1">전체</option>
 	                    <option value="2">1학년</option>
 	                    <option value="2">2학년</option>
 	                    <option value="2">3학년</option>
 	                    <option value="2">4학년</option>
 	                </select>
+                    <label for="example" class="col-sm-2_1 col-form-label">입력</label>
+                    <input class="form-control bg-transparent" style="width: 20%; margin-right: 1.5rem" type="text" placeholder="검색어">
                     <button type="button" class="btn btn-primary ms-2">검색</button>
                 </div>
                 <br>
