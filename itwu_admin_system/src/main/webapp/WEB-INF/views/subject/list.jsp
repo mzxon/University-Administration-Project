@@ -67,14 +67,16 @@
                                  <th scope="col">강의실</th>
                                  <th scope="col">요일</th>
                                  <th scope="col">시간</th>
+                                 <th scope="col">강의계획서</th>
+                                 <th scope="col">비고</th>
                              </tr>
                          </thead>
                          <tbody>
-                         <tr>
                          <c:forEach items="${list}" var="row" varStatus="vs">
+                         <tr>
                                  <td>${row.subcode}</td>
-                                 <td><!-- 교수명 --></td>
-                                 <td><!-- 학과명 --></td>
+                                 <td>${row.code}</td>
+                                 <td>${row.hgcode}</td>
                                  <td>${row.subgrade}</td>
                                  <td>${row.subname}</td>
                                  <td>${row.place}</td>
@@ -85,8 +87,9 @@
                  					<a class="btn btn-sm btn-success" href="detail/${row.subcode}">수정</a>
                  					<a class="btn btn-sm btn-danger" href="delete/${row.subcode}">삭제</a>
 								 </td>
-						 </c:forEach>
+								 
 						 </tr>
+						 </c:forEach>
                          </tbody>
                      </table>
                  </div>

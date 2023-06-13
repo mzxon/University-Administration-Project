@@ -29,14 +29,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
                             <c:forEach items="${list}" var="row" varStatus="vs">
+                            <tr>
                                  <td>${row.no}</td>
                                  <td><a href="detail/${row.no}">${row.title}</a></td>
                                  <td>${row.views}</td>
                                  <td>${row.sysdate}</td>
-						 	</c:forEach>
+                                 
                             </tr>
+						 	</c:forEach>
                         </tbody>
                     </table>
                 	<button type="button" class="btn btn-primary ms-2" style="float: right" onclick="location.href='notice/write'">글쓰기</button>
