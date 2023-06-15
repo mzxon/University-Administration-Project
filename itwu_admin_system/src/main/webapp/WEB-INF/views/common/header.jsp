@@ -66,10 +66,10 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-table me-2"></i>수강신청</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="/sugang/suganglist" class="dropdown-item">수강신청</a>
-                            <a href="/sugang/sugangcart" class="dropdown-item">수강신청 장바구니</a>
-                            <a href="/sugang/sugangmylist" class="dropdown-item">수강신청 내역</a>
-                            <a href="/sugang/sugangtimetable" class="dropdown-item">시간표 조회</a>
+                            <a href="/sugang/list" class="dropdown-item">수강신청</a>
+                            <a href="/sugang/cart" class="dropdown-item">수강신청 장바구니</a>
+                            <a href="/sugang/mylist" class="dropdown-item">수강신청 내역</a>
+                            <a href="/sugang/timetable" class="dropdown-item">시간표 조회</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
