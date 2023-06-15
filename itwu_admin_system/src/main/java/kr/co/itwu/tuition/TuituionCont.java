@@ -26,5 +26,12 @@ public class TuituionCont {
 	}//list() end
 	
 	
+	//등록금 등록
+	@RequestMapping("/write")
+	public String write() {
+		return "/tuition/write";
+	}//write() end
+	
+	
 	
 }//class end
