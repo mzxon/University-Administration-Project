@@ -3,7 +3,7 @@
 <%@ include file="../common/l_header.jsp" %>
 
 <body>
- 	<form name="loginfrm" id="loginfrm" method="post" action="" onsubmit="return fn_login();">
+ 	<form name="loginfrm" id="loginfrm" method="post" action="loginproc" onsubmit="return fn_login();">
 	    <div class="container-xxl position-relative bg-white d-flex p-0">
 	        <!-- Spinner Start -->
 	        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -26,11 +26,11 @@
 				                    <h3>로그인</h3>
 				                </div>
 				                <div class="form-floating mb-3">
-				                    <input type="text" class="form-control" id="code" name="code" placeholder="name@example.com">
+				                    <input type="text" class="form-control" id="code" name="code">
 				                    <label for="floatingInput">학번</label>
 				                </div>
 				                <div class="form-floating mb-4">
-				                    <input type="password" class="form-control" id="passwd" placeholder="Password">
+				                    <input type="password" class="form-control" id="passwd" name="passwd">
 				                    <label for="floatingPassword">비밀번호</label>
 				                </div>
 				                <div class="d-flex align-items-center justify-content-between mb-4">
@@ -49,5 +49,21 @@
 	        <!-- LogIn End -->
 	    </div>
 	</form>
+	
+	<script>
+	function fn_login() {
+		
+/* 		alert(document.getElementById("code").value); */
+ 		if ($("#code").val() == '') {
+			swal("로그인 실패", "ID를 입력하세요.", "warning");
+			return false;
+		}
+
+		if ($("#passwd").val() == '') {
+			swal("로그인 실패", "비밀번호를 입력하세요", "warning");
+			return false;
+		}
+	}
+	</script>
 	
 <%@ include file="../common/l_footer.jsp" %>

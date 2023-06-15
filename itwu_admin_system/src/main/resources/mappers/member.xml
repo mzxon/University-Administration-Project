@@ -30,6 +30,13 @@
 		INSERT INTO professor(code, name, passwd, phone, email, hgcode)
 		VALUES (#{code}, #{name}, #{passwd}, #{phone}, #{email}, #{hgcode})
 	</insert>
+	
+	<!-- 로그인 -->
+	<select id="login" parameterType="kr.co.itwu.member.MemberDTO" resultType="int">
+		SELECT count(*)
+		FROM student
+		WHERE code=#{code} AND passwd=#{passwd}
+	</select>
 
 
 </mapper>
