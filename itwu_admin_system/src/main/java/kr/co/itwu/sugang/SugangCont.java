@@ -66,33 +66,7 @@ public class SugangCont {
 		
 	}//insert() end
 	
-	
-	
-	//강의 담기(장바구니)
-	@RequestMapping("/cartinsert")
-	public String cartinsert(@RequestParam("subcode") String subcode
-						,@RequestParam("code") String code
-						,@RequestParam("status") int status) {
-		Map<String, Object> map = new HashMap<>();
-		map.put("subcode", subcode);
-		map.put("code", code);
-		map.put("status", status);
-		
-		sugangDao.insert(map);
-		
-		return "redirect:/sugang/cartlist";
-		
-	}//insert() end
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	@RequestMapping("/mylist")
 	public String sugangmylist() {
 		return "/sugang/mylist";

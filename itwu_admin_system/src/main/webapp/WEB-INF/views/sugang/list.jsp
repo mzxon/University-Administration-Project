@@ -3,11 +3,18 @@
 <%@ include file="../common/header.jsp" %>
 
 <script>
-	function sugang_insert(){
+	
+	function sugang_insert(insert){
 		if(confirm("이 강의를 신청하겠습니까?")){
+			if(insert==1){
+				document.getElementById("status").value=1;
+			}else{
+				document.getElementById("status").value=2;
+			}
 			document.sugangfrm.action="/sugang/insert";
 			document.sugangfrm.submit();
 		}//if end
+		
 	}//sugang_insert() end
 </script>
 
@@ -89,9 +96,10 @@
                                  <td>${row.sub}</td>
                                  <td>
                                  	<input type="hidden" name="subcode" value="${row.subcode}">
-                                 	<input type="hidden" name="code" value="${row.code}">
-                                 	<input type="hidden" name="status" value=2> <!-- 1: 장바구니 2: 수강신청 3:신청완료 -->
-	            					<input type="button" value="담기" onclick="sugang_insert()"> 
+                                 	<input type="hidden" name="code" value="${row.code}">  	
+                                 	<input type="hidden" id="status" name="status" value=""> <!-- 1: 장바구니 2: 수강신청 3:신청완료 -->
+	            					<button type="button" id="insert" onclick="sugang_insert(1)">장바구니담기</button> <!-- 장바구니 -->
+	            					<button type="button" id="insert" onclick="sugang_insert(2)">수강신청담기</button> <!-- 수강신청 -->
 	            				</td>
                              </tr>
                          </c:forEach>
