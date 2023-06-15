@@ -8,7 +8,7 @@
     <div class="row g-4">
         <div class="col-12">
             <div class="bg-light rounded h-100 p-4">
-                <h2 class="mb-4">등록금 목록</h2>
+                <h2 class="mb-4">등록금 관리</h2>
                 <div class="d-flex mb-2">
                     <label for="example" class="col-sm-2_1 col-form-label">학부</label>
 	                <select class="form-select form-select-sm mb-3_1" aria-label=".form-select-sm example" style="width: 12%">
@@ -27,12 +27,13 @@
 	                    <option value="2">4학년</option>
 	                </select>
                     <button type="button" class="btn btn-primary ms-2">검색</button>
+                    <button type="button" class="btn btn-primary ms-2" style="float: right; " onclick="location.href='write'">등록금 추가</button>
                 </div>
                 <br>
                 
 <!------------------------------------------------------------------------------------------------------>                
                 <div class="table-responsive" style="margin-top: 1rem !important;">
-                     <table class="table text-start align-middle table-bordered table-hover mb-0">
+                     <table class="table table-hover">
                          <thead>
                              <tr class="text-dark">
                                  <th scope="col">등록금일련번호</th>

@@ -27,7 +27,7 @@
                 
 				<!-- 테이블 내부 시작 -->
                 <div class="table-responsive" style="margin-top: 1rem !important;">
-                     <table class="table text-start align-middle table-bordered table-hover mb-0">
+                     <table class="table table-hover">
                          <thead>
                              <tr class="text-dark">
                                  <th scope="col"><input class="form-check-input" type="checkbox"></th>

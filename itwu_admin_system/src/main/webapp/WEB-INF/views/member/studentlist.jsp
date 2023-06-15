@@ -10,9 +10,9 @@
 	            <h2>학생관리</h2>
                 <div class="table-responsive">
                 	<button type="button" class="btn btn-primary ms-2" style="float: right; margin-bottom: 1.5rem;" onclick="location.href='studentwrite'">학생 추가</button>
-                    <table class="table">
+                    <table class="table table-hover">
                         <thead>
-                            <tr>
+                            <tr class="text-dark">
                                 <th scope="col">학번</th>
                                 <th scope="col">이름</th>
                                 <th scope="col">학과</th>

@@ -10,9 +10,9 @@
 	            <h2>교수관리</h2>
                 <div class="table-responsive">
                 	<button type="button" class="btn btn-primary ms-2" style="float: right; margin-bottom: 1.5rem;" onclick="location.href='prowrite'">교수 추가</button>
-                    <table class="table">
+                    <table class="table table-hover">
                         <thead>
-                            <tr>
+                            <tr class="text-dark">
                                 <th scope="col">일련번호</th>
                                 <th scope="col">이름</th>
                                 <th scope="col">학과</th>

@@ -36,6 +36,10 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+    
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -97,10 +101,9 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: 900;"><i class="fa fa-school me-2"></i>학적관리</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="/hakgwa/hakgwalist" class="dropdown-item">학과 관리</a>
+                            <a href="/tuition/list" class="dropdown-item">등록금 관리</a>
                             <a href="/member/studentlist" class="dropdown-item">학생 관리</a>
                             <a href="/member/prolist" class="dropdown-item">교수 관리</a>
-                            <a href="/hakjuk/tuitionIns" class="dropdown-item">등록금 등록</a>
-                            <a href="/tuition/list" class="dropdown-item">등록금 목록</a>
                         </div>
                     </div>
                     <a href="" class="nav-item nav-link" style="font-weight: 900;"><i class="fa fa-user me-2"></i>마이페이지</a>
@@ -128,8 +131,8 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 변경</a>
                             <a href="#" class="dropdown-item">로그아웃</a>
-                            <a href="/sign/signin" class="dropdown-item">로그인</a>
-                            <a href="/sign/signup" class="dropdown-item">회원가입</a>
+                            <a href="/log/login" class="dropdown-item">로그인</a>
+                            <a href="/log/signup" class="dropdown-item">회원가입</a>
                         </div>
                     </div>
                 </div>
