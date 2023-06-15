@@ -12,7 +12,7 @@ public class HomeCont {
 	
 	@RequestMapping("/")
 	public String Home() {
-		return "notice/list";
+		return "log/login";
 	}//home() end
 
 }//class end

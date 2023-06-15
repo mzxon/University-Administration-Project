@@ -80,7 +80,7 @@
                             <a href="">비밀번호 찾기</a>
                         </div>
                         <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
-                        <p class="text-center mb-0">ITWU 계정이 있나요? <a href="signin">로그인하기</a></p>
+                        <p class="text-center mb-0">ITWU 계정이 있나요? <a href="login">로그인하기</a></p>
                     </div>
                 </div>
             </div>
