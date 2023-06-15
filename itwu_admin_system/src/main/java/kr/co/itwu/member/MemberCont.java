@@ -109,12 +109,7 @@ public class MemberCont {
 	 * }//login() end
 	 */	
 	
-	@RequestMapping("/loginproc")
-	public String loginproc() {
-		return "/notice/list";
-		
-	}
-	
+
 	
 	
 	
