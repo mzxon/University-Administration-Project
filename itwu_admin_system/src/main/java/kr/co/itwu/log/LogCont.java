@@ -1,25 +1,25 @@
-package kr.co.itwu.sign;
+package kr.co.itwu.log;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-@RequestMapping("/sign")
+@RequestMapping("/log")
 @Controller
-public class SignCont {
+public class LogCont {
 	
-	public SignCont() {
+	public LogCont() {
 		System.out.println("---------SignController() 객체 생성");
 	}
 	
-	@RequestMapping("/signin")
+	@RequestMapping("/login")
 	public String signin() {
-		return "/sign/signin";
+		return "/log/login";
 	}//signin() end
 	
 	@RequestMapping("/signup")
 	public String signup() {
-		return "/sign/signup";
+		return "/log/signup";
 	}//signin() end
 
 }//class end
