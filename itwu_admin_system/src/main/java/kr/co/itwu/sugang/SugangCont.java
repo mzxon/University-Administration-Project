@@ -1,6 +1,7 @@
 package kr.co.itwu.sugang;
 
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletResponse;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import kr.co.itwu.subject.SubjectDAO;
@@ -27,7 +29,7 @@ public class SugangCont {
 	@Autowired
 	SugangDAO sugangDao;
 	
-	//강의 목록
+	//수강신청 화면
 	@RequestMapping("/list")
 	public ModelAndView list() {
 		ModelAndView mav=new ModelAndView();
@@ -37,18 +39,50 @@ public class SugangCont {
 		return mav;
 	}
 	
-	
-	//강의 수강신청
-	@RequestMapping("insert/{subcode}")
-	public String insert(@PathVariable String subcode, HttpServletResponse response) {
-		Map<String, Object> map=subjectDao.detail(subcode);
+	//장바구니 신청 화면
+	@RequestMapping("/cartlist")
+	public ModelAndView cartlist() {
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("sugang/cartlist");
+		mav.addObject("list", subjectDao.list());
 		
-		sugangDao.insert(map);
-		
+		return mav;
 	}
 	
 	
+	//강의 수강신청
+	@RequestMapping("/insert")
+	public String insert(@RequestParam("subcode") String subcode
+						,@RequestParam("code") String code
+						,@RequestParam("status") int status) {
+		Map<String, Object> map = new HashMap<>();
+		map.put("subcode", subcode);
+		map.put("code", code);
+		map.put("status", status);
+		
+		sugangDao.insert(map);
+		
+		return "redirect:/sugang/list";
+		
+	}//insert() end
+	
+	
+	
 	//강의 담기(장바구니)
+	@RequestMapping("/cartinsert")
+	public String cartinsert(@RequestParam("subcode") String subcode
+						,@RequestParam("code") String code
+						,@RequestParam("status") int status) {
+		Map<String, Object> map = new HashMap<>();
+		map.put("subcode", subcode);
+		map.put("code", code);
+		map.put("status", status);
+		
+		sugangDao.insert(map);
+		
+		return "redirect:/sugang/cartlist";
+		
+	}//insert() end
 	
 	
 	
