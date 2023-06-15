@@ -12,4 +12,15 @@
 		VALUES(#{code}, #{subcode}, curdate(), #{status})
 	</insert>
 	
+	<!-- 수강신청 내역 -->
+	<select id="mylist" resultType="java.util.Map">
+		SELECT subcode, hgcode, subgrade, subname, place, day, time, sub
+		FROM subject 
+		WHERE subcode In (
+							select subcode	
+							from sugangcheck
+							WHERE status='1')	
+	</select>
+	
+	
 </mapper>

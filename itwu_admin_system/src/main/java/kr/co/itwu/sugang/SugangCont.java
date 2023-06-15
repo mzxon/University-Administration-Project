@@ -39,15 +39,6 @@ public class SugangCont {
 		return mav;
 	}
 	
-	//장바구니 신청 화면
-	@RequestMapping("/cartlist")
-	public ModelAndView cartlist() {
-		ModelAndView mav=new ModelAndView();
-		mav.setViewName("sugang/cartlist");
-		mav.addObject("list", subjectDao.list());
-		
-		return mav;
-	}
 	
 	
 	//강의 수강신청
@@ -66,11 +57,32 @@ public class SugangCont {
 		
 	}//insert() end
 	
-
+	
+	//수강신청 내역
 	@RequestMapping("/mylist")
-	public String sugangmylist() {
-		return "/sugang/mylist";
+	public ModelAndView mylist() {
+		//String code="나교수";
+		ModelAndView mav=new ModelAndView();
+		mav.setViewName("sugang/mylist");
+		mav.addObject("mylist", sugangDao.mylist());
+		
+		return mav;
+		
 	}//sugangmylist() end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	@RequestMapping("/timetable")
 	public String timetable() {

@@ -23,15 +23,16 @@
                              </tr>
                          </thead>
                          <tbody>
-                             <c:forEach items="${list}" var="row" varStatus="vs">               
+                             <c:forEach items="${mylist}" var="row" varStatus="vs">               
                              <tr>
-                                 <td><!-- 강의번호 --></td>
-                                 <td><!-- 학년 --></td>
-                                 <td><!-- 강의명 --></td>
-                                 <td><!-- 강의실 --></td>
-                                 <td><!-- 강의요일 --></td>
-                                 <td><!-- 강의시간 --></td>
-                                 <td><!-- 학점 --></td>
+                                 <td>${row.subcode}</td>
+                                 <td>${row.hgcode}</td>
+                                 <td>${row.subgrade}</td>
+                                 <td>${row.subname}</td>
+                                 <td>${row.place}</td>
+                                 <td>${row.day}</td>
+                                 <td>${row.time}</td>
+                                 <td>${row.sub}</td>
                              </tr>
                              </c:forEach>
                          </tbody>
