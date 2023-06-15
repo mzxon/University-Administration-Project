@@ -4,10 +4,11 @@
 
 <script>
 	function sugang_insert(){
-		if(confilrm("이 강의를 신청하겠습니까?")){
-			document.sugangfrm.action=""
-		}
-	}
+		if(confirm("이 강의를 신청하겠습니까?")){
+			document.sugangfrm.action="/sugang/insert";
+			document.sugangfrm.submit();
+		}//if end
+	}//sugang_insert() end
 </script>
 
 <!-- Contents Start -->
@@ -87,17 +88,16 @@
                                  <td>${row.time}</td>
                                  <td>${row.sub}</td>
                                  <td>
-                 					<a class="btn btn-sm btn-success" href="cart/${row.subcode}">장바구니</a>
-                 					<a class="btn btn-sm btn-danger" href="insert/${row.subcode}">담기</a>
-								 </td>
+                                 	<input type="hidden" name="subcode" value="${row.subcode}">
+                                 	<input type="hidden" name="code" value="${row.code}">
+                                 	<input type="hidden" name="status" value=2> <!-- 1: 장바구니 2: 수강신청 3:신청완료 -->
+	            					<input type="button" value="담기" onclick="sugang_insert()"> 
+	            				</td>
                              </tr>
                          </c:forEach>
                          </tbody>
                      </table>
                      </form>
-                 </div>
-                 <div style="margin-top: 1rem !important;">
-                 	<a class="btn btn-sm btn-success" href="">장바구니 담기</a>
                  </div>
             </div>
         </div>

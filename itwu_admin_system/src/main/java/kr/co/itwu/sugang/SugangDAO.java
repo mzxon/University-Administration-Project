@@ -1,5 +1,7 @@
 package kr.co.itwu.sugang;
 
+import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -14,6 +16,11 @@ public class SugangDAO {
 	
 	@Autowired
 	SqlSession sqlSession;
+	
+	//수강신청
+	public void insert(Map<String, Object> map) {
+		sqlSession.insert("sugang.insert", map);
+	}
 	
 	
 	
