@@ -42,5 +42,13 @@ public class MemberDAO {
 	}//insert() end
 	
 	
+	//로그인
+	public int login(MemberDTO dto){
+		return sqlSession.selectOne("member.login", dto);
+	}
+	
+	
+	
+	
 
 }//class end

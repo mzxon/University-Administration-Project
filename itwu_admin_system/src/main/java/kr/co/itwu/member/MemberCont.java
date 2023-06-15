@@ -19,6 +19,9 @@ public class MemberCont {
 	@Autowired
 	MemberDAO memberDAO;
 	
+	@Autowired
+	MemberServicelmpl memberServicelmpl;
+	
 	//학생 본인 정보 수정
 	@RequestMapping("/studentmodify")
 	public String studentmodify() {
@@ -70,7 +73,7 @@ public class MemberCont {
 	}//prowrite() end
 	
 	
-	//관리자 교수 정보 등록 구현
+	//관리자 교수 정보 등록 실행
 	@RequestMapping("/proIns")
 	public String proIns(@RequestParam Map<String, Object> map) {
 		
@@ -80,7 +83,37 @@ public class MemberCont {
 	}//proIns() end
 	
 	
+	//로그인 실행
+	/*
+	 * @RequestMapping("/loginproc") public void loginproc(@RequestParam("code")
+	 * String code,
+	 * 
+	 * @RequestParam("passwd") String passwd) throws Exception { String path="";
+	 * 
+	 * MemberDTO dto = new MemberDTO();
+	 * 
+	 * System.out.println(code+passwd);
+	 * 
+	 * dto.setCode(code); dto.setPasswd(passwd);
+	 * 
+	 * int result = memberDAO.login(dto);
+	 * 
+	 * 
+	 * System.out.println(result);
+	 * 
+	 * 
+	 * if (result == 1 ) { path = "/notice/list"; }
+	 * 
+	 * 
+	 * 
+	 * }//login() end
+	 */	
 	
+	@RequestMapping("/loginproc")
+	public String loginproc() {
+		return "/notice/list";
+		
+	}
 	
 	
 	

@@ -19,19 +19,6 @@
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
     
-    <script>
-	function fn_login() {
-		if ($("#code").val() == '') {
-			swal("ID를 입력하세요.");
-			return false;
-		}
-
-		if ($("#password").val() == '') {
-			swal("비밀번호를 입력하세요");
-			return false;
-		}
-	}
-	</script>
 </body>
 
 </html>

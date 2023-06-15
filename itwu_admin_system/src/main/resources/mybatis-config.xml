@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+  <!-- DAO클래스 -->
+  <configuration>
+  
+  	<!-- 클래스에 대한 별칭 부여 -->
+  	<typeAliases>
+  		<typeAlias type="kr.co.itwu.member.MemberDTO" alias="memberDTO"/>
+  	</typeAliases>
+  
+  </configuration>
