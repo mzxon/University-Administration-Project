@@ -43,7 +43,7 @@ public class MemberDAO {
 	
 	
 	//로그인
-	public int login(MemberDTO dto){
+	public MemberDTO login(MemberDTO dto){
 		return sqlSession.selectOne("member.login", dto);
 	}
 	

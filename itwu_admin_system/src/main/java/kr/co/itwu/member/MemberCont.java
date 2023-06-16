@@ -19,9 +19,6 @@ public class MemberCont {
 	@Autowired
 	MemberDAO memberDAO;
 	
-	@Autowired
-	MemberServicelmpl memberServicelmpl;
-	
 	//학생 본인 정보 수정
 	@RequestMapping("/studentmodify")
 	public String studentmodify() {

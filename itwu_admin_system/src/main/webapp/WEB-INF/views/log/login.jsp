@@ -42,7 +42,7 @@
 					                </div>
 					                <input type="submit" class="btn btn-primary py-3 w-100 mb-4" value="로그인">
 								</form>
-			                <p class="text-center mb-0">ITWU 계정이 없나요? <a href="signup">회원가입</a></p>
+			                <p class="text-center mb-0">ITWU 계정이 없나요? <a href="log/signup">회원가입</a></p>
 			            </div>
 			        </div>
 			    </div>
@@ -51,9 +51,13 @@
     </div>
 	
 	<script>
+	var msg = "${message}";
+	if(msg === "loginError"){
+		swal("로그인 실패", "ID나 비밀번호를 확인하세요.","error");
+	}
+	
 	function fn_login() {
 		
-/* 		alert(document.getElementById("code").value); */
  		if ($("#code").val() == '') {
 			swal("로그인 실패", "ID를 입력하세요.", "warning");
 			return false;
@@ -63,6 +67,27 @@
 			swal("로그인 실패", "비밀번호를 입력하세요", "warning");
 			return false;
 		}
+		
+		
+		$.ajax({
+				url : '/login',
+				type : 'POST',
+				dataType : 'json',
+				data : {
+					code: '#code',
+					passwd: '#passwd'
+				},
+				async : false,
+				success : function (response) {
+					location.href = '/notice/list';
+				},
+				error : function (request, status, error) {
+					swal("로그인 실패", "ID나 비밀번호를 확인하세요.","error");
+				}
+		})
+		
+		
+		
 	}
 	</script>
 	

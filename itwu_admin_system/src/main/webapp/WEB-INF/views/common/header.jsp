@@ -61,8 +61,8 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="ms-3">
-                        <h6 class="mb-0">관리자1</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">${res.name}</h6>
+                        <span>${res.code}</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -127,12 +127,12 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <span class="d-none d-lg-inline-flex">관리자1</span>
+                            <span class="d-none d-lg-inline-flex">${res.name}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="/hakjuk/pw_modify" class="dropdown-item">비밀번호 변경</a>
-                            <a href="#" class="dropdown-item">로그아웃</a>
-                            <a href="/log/login" class="dropdown-item">로그인</a>
+                            <a href="/log/logout" class="dropdown-item">로그아웃</a>
+                            <a href="/" class="dropdown-item">로그인</a>
                             <a href="/log/signup" class="dropdown-item">회원가입</a>
                         </div>
                     </div>
