@@ -32,8 +32,8 @@
 	</insert>
 	
 	<!-- 로그인 -->
-	<select id="login" parameterType="kr.co.itwu.member.MemberDTO" resultType="int">
-		SELECT count(*)
+	<select id="login" parameterType="kr.co.itwu.member.MemberDTO" resultType="kr.co.itwu.member.MemberDTO">
+		SELECT *
 		FROM student
 		WHERE code=#{code} AND passwd=#{passwd}
 	</select>
