@@ -34,7 +34,7 @@
 	<!-- 로그인 -->
 	<select id="login" parameterType="kr.co.itwu.member.MemberDTO" resultType="kr.co.itwu.member.MemberDTO">
 		SELECT *
-		FROM student
+		FROM member
 		WHERE code=#{code} AND passwd=#{passwd}
 	</select>
 
