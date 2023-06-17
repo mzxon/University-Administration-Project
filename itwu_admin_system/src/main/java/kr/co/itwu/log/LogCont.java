@@ -34,20 +34,11 @@ public class LogCont {
 	public String signup() {
 		return "/log/signup";
 	}//signin() end
-	
-	
-
-	@RequestMapping("/loginerror")
-	public String loginerror(@RequestParam(value="login_error", required=false) String loginError, RedirectAttributes ra) {
-		ra.addFlashAttribute("message", "loginError");
-		return "redirect:/";
-	}
-
-	 
+ 
 	
 	//로그인 실행
 	@RequestMapping("/loginproc")
-	public String loginproc(MemberDTO dto, HttpServletRequest request) throws Exception {
+	public String loginproc(MemberDTO dto, HttpServletRequest request, RedirectAttributes ra) throws Exception {
 		
 		//세션생성 
 		HttpSession session = request.getSession();
@@ -70,7 +61,8 @@ public class LogCont {
 			session.setAttribute("res", res);
 			return "redirect:/notice/list";
 		} else {
-			return "redirect:/log/loginerror";
+			ra.addFlashAttribute("message", "loginError");
+			return "redirect:/";
 		}
 	
 	}//loginproc() end
