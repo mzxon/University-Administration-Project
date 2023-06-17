@@ -36,12 +36,14 @@ public class LogCont {
 	}//signin() end
 	
 	
-	/*
-	 * @RequestMapping("/loginerror") public String
-	 * loginerror(@RequestParam("login_error") String loginError, RedirectAttributes
-	 * ra) { ra.addFlashAttribute("message", "loginError"); return "redirect:/"; }
-	 */
-	
+
+	@RequestMapping("/loginerror")
+	public String loginerror(@RequestParam(value="login_error", required=false) String loginError, RedirectAttributes ra) {
+		ra.addFlashAttribute("message", "loginError");
+		return "redirect:/";
+	}
+
+	 
 	
 	//로그인 실행
 	@RequestMapping("/loginproc")
@@ -68,7 +70,7 @@ public class LogCont {
 			session.setAttribute("res", res);
 			return "redirect:/notice/list";
 		} else {
-			return "redirect:/";
+			return "redirect:/log/loginerror";
 		}
 	
 	}//loginproc() end

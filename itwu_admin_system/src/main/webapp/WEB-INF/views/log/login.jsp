@@ -51,7 +51,7 @@
     </div>
 	
 	<script>
-	var msg = "${message}";
+ 	var msg = "${message}";
 	if(msg === "loginError"){
 		swal("로그인 실패", "ID나 비밀번호를 확인하세요.","error");
 	}
@@ -67,24 +67,6 @@
 			swal("로그인 실패", "비밀번호를 입력하세요", "warning");
 			return false;
 		}
-		
-		
-		$.ajax({
-				url : '/login',
-				type : 'POST',
-				dataType : 'json',
-				data : {
-					code: '#code',
-					passwd: '#passwd'
-				},
-				async : false,
-				success : function (response) {
-					location.href = '/notice/list';
-				},
-				error : function (request, status, error) {
-					swal("로그인 실패", "ID나 비밀번호를 확인하세요.","error");
-				}
-		})
 		
 		
 		
