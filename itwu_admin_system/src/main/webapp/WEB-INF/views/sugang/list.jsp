@@ -1,18 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>    
 <%@ include file="../common/header.jsp" %>
 
 <script>
-	
-	function sugang_insert(insert){
+	/*
+	function sugang_insert(insert, frm){
+		let subcode=document.getElementById("subcode").value;
+		alert(subcode);
+		alert(frm);
+		
 		if(confirm("이 강의를 신청하겠습니까?")){
 			if(insert==1){
 				document.getElementById("status").value=1;
 			}else{
 				document.getElementById("status").value=2;
 			}
-			document.sugangfrm.action="/sugang/insert";
+			document.sugangfrm.action="/sugang/insert/{subcode}";
 			document.sugangfrm.submit();
+		}//if end
+		
+	}//sugang_insert() end
+	
+	
+	*/
+	
+	function sugang_insert(insert, frm){
+		let subcode=frm.subcode.value;
+		alert(subcode);
+		alert(frm);
+		
+		if(confirm("이 강의를 신청하겠습니까?")){
+			if(insert==1){
+				frm.status.value=1;
+			}else{
+				frm.status.value=2;
+			}
+			frm.action="/sugang/insert/"+subcode;
+			frm.submit();
 		}//if end
 		
 	}//sugang_insert() end
@@ -68,7 +92,7 @@
                     <button type="button" class="btn btn-primary ms-2">검색</button>
                 </div>
                 <div class="table-responsive" style="margin-top: 1rem !important;">
-                     <form name="sugangfrm" id="sugangfrm" method="post">
+                     
                      <table class="table text-start align-middle table-bordered table-hover mb-0">
                          <thead>
                              <tr class="text-dark">
@@ -85,27 +109,29 @@
                          </thead>
                          <tbody>
                          <c:forEach items="${list}" var="row" varStatus="vs">
-                             <tr>
-                                 <td>${row.subcode}</td>
-                                 <td>${row.hgcode}</td>
-                                 <td>${row.subgrade}</td>
-                                 <td>${row.subname}</td>
-                                 <td>${row.place}</td>
-                                 <td>${row.day}</td>
-                                 <td>${row.time}</td>
-                                 <td>${row.sub}</td>
-                                 <td>
-                                 	<input type="hidden" name="subcode" value="${row.subcode}">
-                                 	<input type="hidden" name="code" value="${row.code}">  	
-                                 	<input type="hidden" id="status" name="status" value=""> <!-- 1: 장바구니 2: 수강신청 3:신청완료 -->
-	            					<button type="button" id="insert" onclick="sugang_insert(1)">장바구니담기</button> <!-- 장바구니 -->
-	            					<button type="button" id="insert" onclick="sugang_insert(2)">수강신청담기</button> <!-- 수강신청 -->
-	            				</td>
-                             </tr>
+                             <form name="sugangfrm" id="sugangfrm" method="post">
+	                             <tr>
+	                                 <td>${row.subcode}</td>
+	                                 <td>${row.hgcode}</td>
+	                                 <td>${row.subgrade}</td>
+	                                 <td>${row.subname}</td>
+	                                 <td>${row.place}</td>
+	                                 <td>${row.day}</td>
+	                                 <td>${row.time}</td>
+	                                 <td>${row.sub}</td>
+	                                 <td>
+	                                 	<input type="hidden" id="subcode" name="subcode" value="${row.subcode}">
+	                                 	<input type="hidden" name="code" value="${row.code}">  	
+	                                 	<input type="hidden" id="status" name="status" value=""> <!-- 1: 장바구니 2: 수강신청 3:신청완료 -->
+		            					<button type="button" id="insert" onclick="sugang_insert(1, this.form)">장바구니담기</button> <!-- 장바구니 -->
+		            					<button type="button" id="insert" onclick="sugang_insert(2, this.form)">수강신청담기</button> <!-- 수강신청 -->
+		            				</td>
+	                             </tr>
+                             </form>
                          </c:forEach>
                          </tbody>
                      </table>
-                     </form>
+
                  </div>
             </div>
         </div>

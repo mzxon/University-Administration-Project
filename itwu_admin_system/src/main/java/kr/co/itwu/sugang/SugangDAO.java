@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.servlet.ModelAndView;
 
+import kr.co.itwu.member.MemberDTO;
+
 @Repository
 public class SugangDAO {
 
@@ -25,11 +27,16 @@ public class SugangDAO {
 	}
 	
 	//수강신청내역
-	public List<Map<String, Object>> mylist(){
-		return sqlSession.selectList("sugang.mylist");
+	public List<Map<String, Object>> mylist(String id){
+		return sqlSession.selectList("sugang.mylist", id);
 	}
 	
 	
+	//장바구니신청내역
+	public List<Map<String, Object>> cart(String id){
+		return sqlSession.selectList("sugang.cart", id);
+	}
+		
 	
 	
 }

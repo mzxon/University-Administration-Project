@@ -7,7 +7,7 @@
     <div class="row g-4">
         <div class="col-12">
             <div class="bg-light rounded h-100 p-4">
-                <h2 class="mb-4">수강신청 장바구니</h2>
+                <h2 class="mb-4">장바구니 내역</h2>
                 <div class="table-responsive" style="margin-top: 1rem !important;">
                      <table class="table text-start align-middle table-bordered table-hover mb-0">
                          <thead>
@@ -24,73 +24,18 @@
                              </tr>
                          </thead>
                          <tbody>
+                             <c:forEach items="${cart}" var="row" varStatus="vs">               
                              <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000001</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>컴퓨터의 개념 및 실습</td>
-                                 <td>38동 302호</td>
-                                 <td></td>
-                                 <td>3</td>
+                                 <td>${row.subcode}</td>
+                                 <td>${row.hgcode}</td>
+                                 <td>${row.subgrade}</td>
+                                 <td>${row.subname}</td>
+                                 <td>${row.place}</td>
+                                 <td>${row.day}</td>
+                                 <td>${row.time}</td>
+                                 <td>${row.sub}</td>
                              </tr>
-                             <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000002</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>이산수학</td>
-                                 <td>38동 501호</td>
-                                 <td></td>
-                                 <td>3</td>
-                             </tr>
-                             <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000003</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>1학년</td>
-                                 <td></td>
-                                 <td>프로그래밍연습</td>
-                                 <td>38동 102호</td>
-                                 <td></td>
-                                 <td>3</td>
-                             </tr>
-                             <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000004</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>2학년</td>
-                                 <td></td>
-                                 <td>자료구조</td>
-                                 <td>33동 204호</td>
-                                 <td></td>
-                                 <td>3</td>
-                             </tr>
-                             <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000005</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>2학년</td>
-                                 <td></td>
-                                 <td>논리설계</td>
-                                 <td>34동 404호</td>
-                                 <td></td>
-                                 <td>4</td>
-                             </tr>
-                             <tr>
-                                 <td><input class="form-check-input" type="checkbox"></td>
-                                 <td>G000006</td>
-                                 <td>컴퓨터공학</td>
-                                 <td>3학년</td>
-                                 <td></td>
-                                 <td>프로그래밍의 원리</td>
-                                 <td>34동 404호</td>
-                                 <td></td>
-                                 <td>3</td>
-                             </tr>
-
+                             </c:forEach>
                          </tbody>
                      </table>
                  </div>

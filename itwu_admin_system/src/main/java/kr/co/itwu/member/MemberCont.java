@@ -80,34 +80,6 @@ public class MemberCont {
 	}//proIns() end
 	
 	
-	//로그인 실행
-	/*
-	 * @RequestMapping("/loginproc") public void loginproc(@RequestParam("code")
-	 * String code,
-	 * 
-	 * @RequestParam("passwd") String passwd) throws Exception { String path="";
-	 * 
-	 * MemberDTO dto = new MemberDTO();
-	 * 
-	 * System.out.println(code+passwd);
-	 * 
-	 * dto.setCode(code); dto.setPasswd(passwd);
-	 * 
-	 * int result = memberDAO.login(dto);
-	 * 
-	 * 
-	 * System.out.println(result);
-	 * 
-	 * 
-	 * if (result == 1 ) { path = "/notice/list"; }
-	 * 
-	 * 
-	 * 
-	 * }//login() end
-	 */	
-	
-
-	
 	
 	
 	

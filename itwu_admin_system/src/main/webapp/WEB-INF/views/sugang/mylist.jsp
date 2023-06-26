@@ -8,6 +8,7 @@
         <div class="col-12">
             <div class="bg-light rounded h-100 p-4">
                 <h2 class="mb-4">수강신청 내역</h2>
+                <h3></h3>
                 <div class="table-responsive" style="margin-top: 1rem !important;">
                      <table class="table text-start align-middle table-bordered table-hover mb-0">
                          <thead>

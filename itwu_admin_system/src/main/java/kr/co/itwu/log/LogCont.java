@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.co.itwu.member.MemberDAO;
 import kr.co.itwu.member.MemberDTO;
-
+	
 @RequestMapping("/log")
 @Controller
 public class LogCont {
@@ -39,12 +39,13 @@ public class LogCont {
 	//로그인 실행
 	@RequestMapping("/loginproc")
 	public String loginproc(MemberDTO dto, HttpServletRequest request, RedirectAttributes ra) throws Exception {
-		
 		//세션생성 
 		HttpSession session = request.getSession();
 		//세션 유효시간
-		session.setMaxInactiveInterval(3600);
+		session.setMaxInactiveInterval(8000);
 
+		
+		
 		MemberDTO res = memberDAO.login(dto);
 
 //		System.out.println(code);
@@ -52,7 +53,7 @@ public class LogCont {
 //		dto.setCode(code);
 //		dto.setPasswd(passwd);
 		
-//		int result = memberDAO.login(dto);
+//		int result = memberDAO.login(dto);	
 		
 //		System.out.println(result);
 		
